@@ -21,3 +21,6 @@ point of time. The visitor’s navigation on the website is also passed to the o
 closing the conversation, any other operator can continue the chat with the operator. A 
 visitor can chat with only one operator at once while an operator can chat with multiple 
 visitors simultaneously.
+
+The technologies and languages used under this project are:
+SignalR (Asp.Net), JavaScript, CSS, HTML, Visual Studio 2012, Windows IIS
