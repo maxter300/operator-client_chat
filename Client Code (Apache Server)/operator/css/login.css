@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	top:0;
+	background-color:#212121;
+}
+
+#loginwrap{
+	width:400px;
+	float:none;
+	height:400px;
+	margin:100px auto 0px auto;
+	border: 1px solid #2e2e33;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	-moz-box-shadow: 0px 0px 2px 0px #000; /* Firefox */
+	-webkit-box-shadow: 0px 0px 2px 0px #000; /* Safari, Chrome */
+	box-shadow: 0px 0px 2px 0px #000; /* CSS3 */
+	background-color: #141414;
+}
+
+#loginwrap h1{
+	margin:0px;
+	padding:0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16pt;
+	font-weight: normal;
+	color: #999;
+	text-decoration: none;
+	position: absolute;
+	width:400px;
+	text-align:center;
+	left: 0px;
+	top: 20px;
+	text-shadow: 1px 2px 1px #000000;
+	padding-bottom:20px !important;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #2e2e33;
+}
+
+#loginform{
+	position: absolute;
+	width:340px;
+	margin:0px;
+	padding:0px;
+	left: 30px;
+	top: 100px;
+}
+
+#loginwarning{
+	position: absolute;
+	width:340px;
+	margin:0px;
+	padding:0px;
+	left: 30px;
+	bottom: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12pt;
+	font-weight: normal;
+	color: #999;
+	text-shadow: 1px 2px 1px #000000;
+	height:auto !important;
+}
+
+fieldset{
+	width:100%;
+	padding:20px 0px 30px 0px;
+	border:0px;
+	margin:0px 0px 0px 0px;
+}
+
+label{
+	text-decoration: none;
+	width:100%;
+	height:20px;
+	display:block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16pt;
+	font-weight: normal;
+	color: #999;
+	text-shadow: 1px 2px 1px #000000;
+	padding: 0px 0px 10px 0px;
+}
+
+input[type=text],input[type=password],input.text,input.title,textarea {
+	background-color:#0e0e0e;
+	border:1px solid #3d4753;
+	font-size:12pt;
+	color:#FFF;
+	padding: 4px 5px 4px 5px;
+	border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+}
+
+input[type=text]:focus,input[type=password]:focus,input.text:focus,input.title:focus,textarea:focus {
+	border-color:red;
+	-moz-box-shadow: 0 0px 3px #88bbc8;
+	-webkit-box-shadow: 0 0px 3px #88bbc8;
+	box-shadow: 0 0px 3px #88bbc8;
+	padding: 4px 5px 4px 5px;
+	border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+}
+
+.fieldset2{
+	width:340px;
+	padding:0px 0px 30px 0px;
+	border:0px;
+	margin:0px 0px 0px 0px;
+}
+
+.button.big{
+	padding: 8px 20px;
+}	
+
+.button.deep-red{
+	border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+	background-color:#bf0101;	
+	background: -moz-linear-gradient(
+		top,
+		#bf0101 0%,
+		#890303);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#bf0101),
+		to(#890303));
+	-moz-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.3),
+		inset 0px 1px 0px rgba(255,255,255,0.4);
+	-webkit-box-shadow:
+		0px 1px 2px rgba(000,000,000,0.3),
+		inset 0px 1px 0px rgba(255,255,255,0.4);		
+	border: 1px solid #890303;
+	background-clip: padding-box;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	color:#FFF;	
+	}
+	.button.deep-red:hover {
+	color:#FFF;
+	-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4), 0px 0px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4), 0px 0px 3px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4), 0px 0px 3px rgba(0, 0, 0, 0.4);
+	-ms-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4), 0px 0px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4), 0px 0px 3px rgba(0, 0, 0, 0.1);
+	}
+	.button.deep-red:active{
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#890303),
+		to(#bf0101));	
+}
+
+.requiredField{
+	width:330px;
+}

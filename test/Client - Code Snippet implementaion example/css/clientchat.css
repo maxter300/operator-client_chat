@@ -1,0 +1,249 @@
+ 		#backgroundPopup{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+ width:280px;
+ height:255px;
+ bottom:30px;
+           float:left;
+           right:60px;
+background:#000000;
+border:2px solid #cecece;
+z-index:1;
+color: #FFF;
+background-color: rgba(0, 0, 0, 0.80);
+	-webkit-box-shadow: 0px 0px 4px #000 inset;
+	-moz-box-shadow: 0px 0px 4px #000 inset;
+	box-shadow: 0px 0px 4px #000 inset;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+        .close {
+            color: #f2f2f2;
+           background: -webkit-gradient(radial, center center, 0, center center, 460, from(gold), to(goldenrod));
+             /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+    /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+    /* IE 10 */
+  background: -ms-radial-gradient(circle, gold, goldenrod);
+   right:0px;
+   border-radius:15px;
+            color:#fff;
+            float: right;
+            height: 23px;
+            width: 23px;
+            text-indent: -9999px;
+            position: absolute;
+            text-decoration: none;
+        }
+	.close:after {
+		content: "\2716";
+		text-indent:0;
+		display:block;
+		position:absolute;
+		top:2px;
+		right:5px;
+    font-size:12px;
+	}
+
+	.close:hover {
+		
+		color:#ccc;
+    cursor: pointer;
+	}
+  
+  .close:active {
+		color:#fff;
+    cursor: pointer;
+	}
+		.chatbox {
+           width:280px;
+           float:left;
+           margin-right:50px;
+           position:fixed;
+           bottom:0;
+           right:0;
+		   border:solid 2px gray;
+           border-top:solid 3px rgba(208,209,215, 0.4);
+           border-right:solid thick rgba(208,209,215, 0.4);
+           border-left:solid thick rgba(208,209,215, 0.4);
+		   background-color:black;
+		   text-align:center;
+       border-radius: 15px 15px 0 0;
+    padding: 7px;
+    overflow:hidden;
+        }
+        .chatbox #top {
+           width:100%;
+      	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 1.3em;
+	color: #fffff0 ;
+	border-radius: 5px;
+		cursor: pointer;
+        }
+        .chatbox #content {
+          border-top:solid 2px rgba(208,209,215, 0.4);
+          border-bottom:solid 2px rgba(208,209,215, 0.4);
+            width:110%;
+            height:200px;
+            padding-left:0px;
+             overflow-y: scroll;  
+            overflow-x:auto;
+        }
+            .chatbox #content ul {
+                list-style: none;
+                margin: 0;
+                padding-left:5px;
+                word-wrap: break-word;
+                text-align: left;
+                color:#8b8b8b;
+            }
+        #contentin li { 
+                padding-right:7px;
+           margin-bottom:5px;
+        }
+        
+        .chatbox #sender #data {
+                     
+            width:75%;
+            float:left;
+            border:none;
+            outline:none;
+            margin-left:2px;
+         
+        }
+        .chatbox #sender #send,#send1 {
+            width:20%;
+            float:right;
+        }
+
+#sender textarea{
+display:block;
+padding:3px;
+margin-bottom:20px;
+margin-top:5px;
+background:#3e3e3e;
+border:2px solid #3084a4;
+font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+font-size:0.8em;
+color:#fff;
+}
+#sender textarea:focus{
+border:2px solid #0F0;
+}
+#send,#send1,#msgform input#send2,#contactform input#sendbutton {
+background: #f7931e;
+border:1px solid #f7931e;
+color:#fff;
+padding:1px 2px;
+font-size:.9em;
+border-radius:2px;
+margin-top:7px;
+margin-bottom:8px;
+box-shadow: inset 0px 1px 0px #f7961e, 0px 2px 0px 0px #f7963f, 0px 1px 4px #f7966f;
+}
+#send:active{
+border:1px solid #f7930a;
+}
+        #send:hover, #send:focus,#send1:hover {
+            box-shadow: inset 0px 1px 0px #f7960a, 0px 2px 0px 0px #f7960a, 0px 1px 4px #f7960a;
+            cursor: pointer;
+        }
+
+	#send1:active{
+		border:1px solid #f7930a;
+	}
+		/* Main part of the ribbon */
+
+
+
+.info span{
+    display: none;
+}
+.info:hover span{
+ display:block;
+ position:absolute;
+ z-index:1;
+ bottom:1.7em;
+ left:3.8em;
+ line-height:25px;
+    width: 150px;
+    height: 50px;
+    padding:10px;
+    color:goldenrod;
+ background:hsla(0,0%,100%,1);
+ border-color:green;
+ border:thick;
+    box-shadow: 2px 2px 5px goldenrod;
+    border-radius: 5px;
+}
+.info:hover span:before, .info:hover span:after{
+    content: '';       
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    right: -5px;
+   top:75%;
+    margin-right: 0px;
+    z-index: 7;
+}
+   
+#contactform fieldset{
+    width:150px;
+ margin-left:15%;
+    padding:15px;
+    font-size:1.2em;
+border:none;
+}
+#contactform input{
+display:block;
+padding:5px;
+border-radius:5px;
+margin-bottom:10px;
+margin-top:5px;
+background:#e4e2ce;
+border:2px solid #3084a4;
+font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+}
+#contactform input#yourname, #contactform input#email{
+width:150px;
+}
+
+#contactform input:focus{
+border:2px solid #b21d1f;
+background:#fff;
+}
+#contactform label {
+padding:4px 10px 4px 4px;
+color:#fff;
+}
+        #msgform input,textarea {
+            left:0px;
+            border:none;
+            padding:5px;
+            margin-top:5px;
+background:#3e3e3e;
+width:85%; 
+ color:#8b8b8b;
+font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+font-size:0.8em;
+        }
+        #msgform textarea {
+            height:45px;
+        }
+            #msgform input:focus, #msgform textarea:focus {
+                color:white;
+            }
+       
+       

@@ -1,0 +1,266 @@
+body {
+	overflow:scroll;
+		width:950px;
+		margin:0 auto;
+}
+.thought {
+position:relative; /*see the support section below for more info*//*size of the bubble*/
+padding:5px;
+margin:10px 10px 20px 20px;
+/**give the bubble's background a gradient**/
+background:#f7a944; /*fallback colour for non-supporting browsers*/
+background:-webkit-gradient(linear, 0 0, 0 100%, from(#fac868), to(#f3961c));
+background:-moz-linear-gradient(#fac868, #f3961c);
+background:-o-linear-gradient(#fac868, #f3961c);
+background:linear-gradient(#fac868, #f3961c);
+/**give the corners a large curve**/
+-webkit-border-radius:180px;
+-moz-border-radius:180px;
+border-radius:180px;
+/**add a drop shadow to the bubble**/
+-webkit-box-shadow: -3px 4px 8px #989898;
+-moz-box-shadow: -3px 4px 8px #989898;
+box-shadow: -3px 4px 8px #989898;
+/**style the text**/
+color:#575544;
+font-size:1em;
+letter-spacing:.06em;
+}
+h1{
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	text-shadow:
+		-1px 1px 0 #ddd,
+		-2px 2px 0 #c8c8c8,
+		-3px 2px 0 #ccc,
+		-4px 2px 0 #b8b8b8,
+		-4px 2px 0 #bbb,
+		0px 1px 1px rgba(0,0,0,.4),
+		0px 2px 2px rgba(0,0,0,.3),
+		-1px 3px 3px rgba(0,0,0,.2),
+		-1px 5px 5px rgba(0,0,0,.1),
+		-2px 2px 2px rgba(0,0,0,.1),
+		-2px 4px 4px rgba(0,0,0,.1)
+		;
+}
+#op_column{
+
+}
+#visitorbox {
+	width:100%;
+	margin:0 auto;
+	top:100px;
+	float:left;
+	min-width:450px;
+}
+#visitorbox h3,#incoming h3{
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 1.3em;
+	color: #fffff0 ;
+	padding:10px;
+	background-color: #f7931e;
+	background: -webkit-linear-gradient(#f7931e,#f7931f);
+	background: linear-gradient(#f7931e,#f7931f);
+	border: 1px inset #ffffff;
+	border-radius: 5px;
+	
+	cursor: pointer;
+}
+#incoming {
+	top:100px;
+	width:100%;
+	margin:0 auto;
+	float:left;
+	
+}
+.border {
+position:relative; 
+width:85%; /*size of the bubble*/
+background:#fff; /*same as the container background*/
+padding:15px;
+margin:5px 5px 5px 5px;
+color:#333;
+/*add the bubble outline*/
+border:10px solid #7e527f;
+/*give the bubble curved corners*/
+-webkit-border-radius:15px;
+-moz-border-radius:15px;
+border-radius:15px;
+list-style:none;
+}
+.basic1,.timewrapper,.basic2{
+position: relative; 
+padding:10px;
+padding-left:15px;
+padding-right:15px;
+color:#FFF;
+margin:30px; /*must be at least the size the triangle we're going to create below*/
+/**add a curve to the corners**/
+line-height:25px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+/**Give the background a gradient**/
+background: #c49bc4; /*required for browsers that don't support gradients*/
+background: -webkit-linear-gradient(#7e527f, #c49bc4);
+background: -moz-linear-gradient(#7e527f, #c49bc4);
+background: -o-linear-gradient(#7e527f, #c49bc4);
+background: linear-gradient(#7e527f, #c49bc4);
+}
+
+.loc {
+	word-wrap: break-word;
+	margin-bottom:30px;
+}
+
+.basic2{
+	position:absolute;
+	bottom:0px;
+	margin-bottom:5px;
+	margin-left:490px;
+	
+}
+#textarea1 {
+	max-width:420px;
+position:absolute; /*see the support section below for more info*/
+  margin-left:125px;
+  bottom:10px;
+padding:10px;
+padding-left:15px;
+padding-right:15px;
+color:#FFF;
+/*must be at least the size the triangle we're going to create below*/
+/**add a curve to the corners**/
+line-height:10px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+/**Give the background a gradient**/
+background: #c49bc4; /*required for browsers that don't support gradients*/
+background: -webkit-linear-gradient(#7e527f, #c49bc4);
+background: -moz-linear-gradient(#7e527f, #c49bc4);
+background: -o-linear-gradient(#7e527f, #c49bc4);
+background: linear-gradient(#7e527f, #c49bc4);
+}
+ 		.chatbox {
+			 width:280px;
+           position:fixed;
+          
+           border-top:solid 3px rgba(208,209,215, 0.4);
+           border-right:solid thick rgba(208,209,215, 0.4);
+           border-left:solid thick rgba(208,209,215, 0.4);
+		   background-color:black;
+		   text-align:center;
+       border-radius: 15px 15px 0 0;
+    padding: 7px;
+    overflow:hidden;
+        }
+        .chatbox #top {
+			width:100%;
+      	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 1.3em;
+	color: #fffff0 ;
+	border-radius: 5px;
+		cursor: pointer;
+        }
+		.chatbox #top1 {
+			padding-right:4px;
+			padding-left:4px;
+			word-wrap:break-word;
+           background-color:#545454;
+		   margin-bottom:3px;
+           color:#09F;
+           border:solid thin gray;
+           border-top-width:2px;
+        }
+        .chatbox #content {
+            border-top:solid 2px rgba(208,209,215, 0.4);
+          border-bottom:solid 2px rgba(208,209,215, 0.4);
+            width:110%;
+            height:200px;
+            padding-left:0px;
+             overflow-y: scroll;  
+            overflow-x:auto;
+        }
+        .chatbox #content ul {
+            list-style:none;
+            margin:0;
+            padding-left:5px;
+                word-wrap: break-word;
+                text-align: left;
+                color:#8b8b8b;
+        }
+		#contentin li { 
+                padding-right:7px;
+           margin-bottom:5px;
+        }
+        
+        .chatbox #sender #data {
+           width:75%;
+            float:left;
+            border:none;
+            outline:none;
+            margin-left:2px;
+        }
+        .chatbox #sender #send {
+             width:20%;
+            float:right;
+        }
+		#sender textarea{
+			display:block;
+			padding:3px;
+			margin-bottom:20px;
+			margin-top:5px;
+			background:#3e3e3e;
+			border:2px solid #3084a4;
+			font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+			font-size:0.8em;
+			color:#fff;
+			}
+#sender textarea:focus{
+border:2px solid #0F0;
+}
+#send {
+	float:right;
+background: #f7931e;
+border:1px solid #f7931e;
+color:#fff;
+padding:1px 2px;
+font-size:.9em;
+border-radius:2px;
+margin-top:7px;
+margin-bottom:8px;
+box-shadow: inset 0px 1px 0px #f7961e, 0px 2px 0px 0px #f7963f, 0px 1px 4px #f7966f;
+}
+#send:active{
+border:1px solid #f7930a;
+}
+#send:hover,#send:focus{
+box-shadow: inset 0px 1px 0px #f7960a, 0px 2px 0px 0px #f7960a, 0px 1px 4px #f7960a;
+cursor:pointer;
+}
+#send1{
+	cursor:pointer;
+background: #ECECEC;
+		border-radius: 5px;
+		padding: 2px 4px;
+		font-family: arial;
+		font-weight: bold;
+		color:#7f7f7f;
+		text-decoration: none;
+		text-shadow:0px 1px 0px #fff;
+		border:1px solid #a7a7a7;
+		box-shadow: 0px 2px 1px white inset, 0px -2px 2px white, 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 3px 4px rgba(0, 0, 0, 0.1);
+		-webkit-transition:box-shadow 0.5s;
+}
+
+	#send1:active{
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 2px white, 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+		background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
+	}
+	.sendpos{
+	position:absolute;
+	bottom:10px;
+	margin-left:640px;
+}
